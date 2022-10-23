@@ -16,12 +16,11 @@ p{
     color: rgb(4, 63, 139);
 }
 
-
 input{
     text-align: center;
     font-family: monospace;
     font-size: 2em;
-    color: rgb(97, 157, 236);
+    color: rgb(0, 0, 0);
     margin: 0 auto;
     display: block;
 
@@ -35,6 +34,7 @@ button{
     color: rgb(4, 63, 139);
     margin: 0 auto;
     display: block;
+    background-color: rgb(152, 220, 236);
 }
 
 img{
@@ -46,7 +46,7 @@ img{
 
 table{
     margin: 0 auto;
-    font family: monospace;
+    font-family: monospace;
     text-align: center;
     border: 5px solid black;
     border-spacing: 50px;
