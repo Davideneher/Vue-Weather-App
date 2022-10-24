@@ -22,7 +22,7 @@
         methods: {
             httpsGet(clicked) {
                 if (clicked) {
-                    fetch(`http://api.openweathermap.org/data/2.5/forecast?q=${this.cityName}&appid=b731b5a1b4a7d0c043bf6025ee0803bb&units=metric`)
+                    fetch(`http://api.openweathermap.org/data/2.5/forecast?q=${this.cityName}&appid=&units=metric`)
                     .then((response) => response.json())
                     .then((cityData) => {
                         console.log(cityData);
@@ -115,7 +115,7 @@
                         //Use fetch API to get a historical event that happened in the city on the current date.
                         fetch(`https://api.api-ninjas.com/v1/historicalevents?text=${this.cityName}&date=${cityData.list[0].dt_txt}&limit=1`, {
                             headers: {
-                                "X-Api-Key": "4w/ftYwAEPICdzNz4RoXyw==ALQm9QbIL0pVDzaK"
+                                "X-Api-Key": ""
                             }
                         })
                         .then((response) => response.json())
